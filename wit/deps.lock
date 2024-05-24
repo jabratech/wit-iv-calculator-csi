@@ -1,0 +1,14 @@
+[common]
+sha256 = "c41b3b626c0b24a7f5cef4b1f63aab8f1cb9255dbfaca51bfb38400550029508"
+sha512 = "ee2b3c620a11d23627e9f58631500fec4b220ab7cd5f6b718a1c7e3e426f0ed35588e2418f36f74020ce2dfeaf6a2993df88104f50442a3c8cf8ea268184acad"
+
+[logging]
+url = "https://github.com/WebAssembly/wasi-logging/archive/main.tar.gz"
+sha256 = "9676b482485bb0fd2751a390374c1108865a096b7037f4b5dbe524f066bfb06e"
+sha512 = "30a621a6d48a0175e8047c062e618523a85f69c45a7c31918da2b888f7527fce1aca67fa132552222725d0f6cdcaed95be7f16c28488d9468c0fad00cb7450b9"
+
+[ticker-provider]
+url = "https://github.com/jabratech/wit-ticker-provider/archive/v0.1.5.tar.gz"
+sha256 = "4a65c58b62ad4336e8c4591c3d0892114d03d896a6429a05e16f31e36e4f1276"
+sha512 = "58c7ebae482b4e1c4d41a57250e5b80eb11d0dbe52eb3ed3e270620759cb96809c40b1ab5cbc6ad0dfcf1d8a2154a15d075ba583f4106ce45142aed01413d306"
+deps = ["common"]
