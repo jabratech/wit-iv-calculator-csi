@@ -1,7 +1,19 @@
 package jabratech:component-iv-calculator-csi;
 
 interface iv-calculator-csi {
-    calculate-iv: func(instrument-name: string) -> result<f64, string>;
+    record closest-option {
+        instrument-name: string,
+        mark-iv: f64,
+        bid-iv: f64,
+        ask-iv: f64,
+    }
+
+    record iv-response {
+        cubic-spline: f64,
+        closest-options: list<closest-option>,
+    }
+
+    calculate-iv: func(instrument-name: string) -> result<iv-response, string>;
 }
 
 world component-iv-calculator-csi {
